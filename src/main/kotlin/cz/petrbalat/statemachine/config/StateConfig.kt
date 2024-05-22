@@ -20,10 +20,12 @@ class StateConfig : StateMachineConfigurerAdapter<String, String>() {
         JpaPersistingStateMachineInterceptor(jpaStateMachineRepository)
 
     override fun configure(model: StateMachineModelConfigurer<String, String>) {
-        model.withModel().factory(modelFactory());
+        model.withModel().factory(modelFactory()) // TODO multiple xml
     }
 
     @Bean
-    fun modelFactory(): StateMachineModelFactory<String, String> =
-        UmlStateMachineModelFactory("classpath:/states/example-s1-s2.xml");
+    fun modelFactory(): StateMachineModelFactory<String, String> {
+        val modelFactory = UmlStateMachineModelFactory("classpath:/states/example-s1-s2.xml")
+        return modelFactory
+    };
 }
