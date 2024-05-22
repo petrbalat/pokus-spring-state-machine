@@ -1,0 +1,25 @@
+# compiled output
+/dist
+/tmp
+target/
+/web/out/
+backend/.kotlin
+
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+# dependencies
+node_modules/
+
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+out/
+
+application-dev.properties
+application-dev.yaml
