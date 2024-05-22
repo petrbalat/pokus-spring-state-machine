@@ -24,6 +24,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.statemachine:spring-statemachine-starter:4.0.0")
     implementation("org.springframework.statemachine:spring-statemachine-data-jpa:4.0.0")
+    implementation("org.springframework.statemachine:spring-statemachine-uml:4.0.0")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.flywaydb:flyway-core")
