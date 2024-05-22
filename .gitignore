@@ -20,6 +20,6 @@ node_modules/
 *.iml
 *.ipr
 out/
-
+data
 application-dev.properties
 application-dev.yaml
